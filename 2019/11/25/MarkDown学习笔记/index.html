@@ -3,20 +3,20 @@
 <head>
   <meta charset="utf-8">
   
-  <title>MarkDown学习笔记 | YanX的博客</title>
+  <title>MarkDown学习笔记 | 望星Along-blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="在菜鸟教程上学习Markdown简要记录">
 <meta name="keywords" content="-标签1 -标签2">
 <meta property="og:type" content="article">
 <meta property="og:title" content="MarkDown学习笔记">
 <meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;25&#x2F;MarkDown%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0&#x2F;index.html">
-<meta property="og:site_name" content="YanX的博客">
+<meta property="og:site_name" content="望星Along-blog">
 <meta property="og:description" content="在菜鸟教程上学习Markdown简要记录">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-11-25T12:11:54.262Z">
+<meta property="og:updated_time" content="2019-11-25T13:45:17.887Z">
 <meta name="twitter:card" content="summary">
   
-    <link rel="alternate" href="/atom.xml" title="YanX的博客" type="application/atom+xml">
+    <link rel="alternate" href="/atom.xml" title="望星Along-blog" type="application/atom+xml">
   
   
     <link rel="icon" href="/favicon.png">
@@ -38,7 +38,7 @@
   <h3 class="widget-title"></h3>
   <div class="widget">
     <img class="avatar" src="https://avatars0.githubusercontent.com/u/20333903?v=3&amp;s=460">
-    <h2 class="author">XinLong</h2>
+    <h2 class="author">望星Along</h2>
     <h3 class="description"></h3>
     <div class="count-box">
       <a href="/archives"><div><strong>3</strong><br>文章</div></a>
@@ -108,7 +108,8 @@
 <h2 id="工具推荐"><a href="#工具推荐" class="headerlink" title="工具推荐"></a>工具推荐</h2><hr>
 <p><strong>Typora</strong>：<a href="https://typora.io/" target="_blank" rel="noopener">https://typora.io/</a><br><strong>Atom</strong>：<a href="https://atom.io/" target="_blank" rel="noopener">https://atom.io/</a><br>两个都是很不错的Markdown编辑器，Typora使用更加的方便，配合快捷键的使用能够实现快速编辑，能够实时预览，使用教程可以去网上找，推荐一个不错的教程。<br><strong>Typora使用教程</strong>：<a href="https://blog.csdn.net/WeiDelight/article/details/81011921" target="_blank" rel="noopener">https://blog.csdn.net/WeiDelight/article/details/81011921</a><br>Atom不再多说，自行了解。</p>
 <hr>
-<h2 id="Game-Start"><a href="#Game-Start" class="headerlink" title="Game Start!"></a>Game Start!</h2><h3 id="1-标题"><a href="#1-标题" class="headerlink" title="1.标题"></a>1.标题</h3><hr>
+<h2 id="Game-Start"><a href="#Game-Start" class="headerlink" title="Game Start!"></a>Game Start!</h2><h3 id="1-标题"><a href="#1-标题" class="headerlink" title="1.标题"></a>1.标题</h3><p>标题用#，注意<strong>符号与文本之间要有空格</strong></p>
+<hr>
 <p>编辑样式：</p>
 <!--代码高亮就加上python，不用代码高亮就去掉python-->
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 一级标题</span></span><br><span class="line"><span class="comment">## 二级标题</span></span><br><span class="line"><span class="comment">### 三级标题</span></span><br><span class="line"><span class="comment">#### 四级标题</span></span><br></pre></td></tr></table></figure>
@@ -141,12 +142,85 @@
 <hr>
 <p>编辑样式：</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">~~删除线~~</span><br></pre></td></tr></table></figure>
-<p>输出结果：<br><del>删除线</del></p>
-
+<p>输出结果：</p>
+<blockquote>
+<p><del>删除线</del></p>
+</blockquote>
+<hr>
+<h3 id="5-下划线"><a href="#5-下划线" class="headerlink" title="5.下划线"></a>5.下划线</h3><p>使用HTML的&lt;u&gt;标签</p>
+<hr>
+<p>编辑样式：</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;u&gt;下划线&lt;/u&gt;</span><br></pre></td></tr></table></figure>
+<p>输出结果：</p>
+<blockquote>
+<p><u>下划线</u></p>
+</blockquote>
+<hr>
+<h3 id="5-脚注"><a href="#5-脚注" class="headerlink" title="5.脚注"></a>5.脚注</h3><p>脚注是对文本的补充说明，鼠标移至脚注上会显示说明。</p>
+<hr>
+<p>编辑样式：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">脚注[^望星Along]</span><br><span class="line">[^望星Along]: 温柔的博主大大</span><br></pre></td></tr></table></figure>
+<p>输出结果：</p>
+<blockquote>
+<p>脚注[^望星Along]<br>[^望星Along]: 温柔的博主大大  </p>
+</blockquote>
+<hr>
+<h3 id="6-列表"><a href="#6-列表" class="headerlink" title="6.列表"></a>6.列表</h3><h4 id="6-1无序列表"><a href="#6-1无序列表" class="headerlink" title="6.1无序列表"></a>6.1无序列表</h4><p>无序列表使用星号(*)、加号(+)或是减号(-)作为列表标记，注意<strong>符号与文本之间要有空格</strong>。</p>
+<hr>
+<p>编辑样式：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">* item1</span><br><span class="line">* item2</span><br><span class="line"></span><br><span class="line">+ item1</span><br><span class="line">+ item2</span><br><span class="line"></span><br><span class="line">- item1</span><br><span class="line">- item2</span><br></pre></td></tr></table></figure>
+<p>输出结果：</p>
+<blockquote>
+<ul>
+<li>item1</li>
+<li>item2</li>
+</ul>
+<ul>
+<li>item1</li>
+<li>item2</li>
+</ul>
+<ul>
+<li>item1</li>
+<li>item2</li>
+</ul>
+</blockquote>
+<hr>
+<h4 id="6-2有序列表"><a href="#6-2有序列表" class="headerlink" title="6.2有序列表"></a>6.2有序列表</h4><p>有序列表使用数字加点（.）来表示。</p>
+<hr>
+<p>编辑样式：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1.</span> item1</span><br><span class="line"><span class="number">2.</span> item2</span><br></pre></td></tr></table></figure>
+<p>输出结果：</p>
+<blockquote>
+<ol>
+<li>item1</li>
+<li>item2</li>
+</ol>
+</blockquote>
+<h4 id="6-3列表嵌套"><a href="#6-3列表嵌套" class="headerlink" title="6.3列表嵌套"></a>6.3列表嵌套</h4><p>子列表前加四个空格。</p>
+<hr>
+<p>编辑样式：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1.</span> item1</span><br><span class="line">    - item1<span class="number">.1</span></span><br><span class="line">    - item1<span class="number">.2</span></span><br><span class="line"><span class="number">2.</span> item2</span><br><span class="line">    - item2<span class="number">.1</span></span><br><span class="line">    - item2<span class="number">.2</span></span><br></pre></td></tr></table></figure>
+<p>输出结果：</p>
+<blockquote>
+<ol>
+<li>item1<ul>
+<li>item1.1</li>
+<li>item1.2</li>
+</ul>
+</li>
+<li>item2<ul>
+<li>item2.1</li>
+<li>item2.1</li>
+</ul>
+</li>
+</ol>
+</blockquote>
+<hr>
+<h1 id="Continue…"><a href="#Continue…" class="headerlink" title="Continue…"></a>Continue…</h1>
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/11/25/MarkDown%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" data-id="ck3ee784c00036sw19viwgvia" class="article-share-link">分享</a>
+      <a data-url="http://yoursite.com/2019/11/25/MarkDown%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" data-id="ck3ehieh20000bww1gl033mve" class="article-share-link">分享</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%A0%87%E7%AD%BE1-%E6%A0%87%E7%AD%BE2/" rel="tag">-标签1 -标签2</a></li></ul>
@@ -177,7 +251,7 @@
     <div class="widget-wrap">
   <h3 class="widget-title"></h3>
   <div class="widget">
-    <h1 class="blog-title">YanX的博客</h1>
+    <h1 class="blog-title">望星Along-blog</h1>
     <h2 class="blog-subtitle"></h2>
     <ul class="blog-link">
      
@@ -206,7 +280,7 @@
   <h3 class="widget-title"></h3>
   <div class="widget">
     <img class="avatar" src="https://avatars0.githubusercontent.com/u/20333903?v=3&amp;s=460">
-    <h2 class="author">XinLong</h2>
+    <h2 class="author">望星Along</h2>
     <h3 class="description"></h3>
     <div class="count-box">
       <a href="/archives"><div><strong>3</strong><br>文章</div></a>
@@ -243,7 +317,7 @@
   
   <div class="outer">
     <div id="footer-info" class="inner">
-      &copy;2018 - 2019 XinLong<br>
+      &copy;2018 - 2019 望星Along<br>
       由<a href="http://hexo.io/" target="_blank">Hexo</a>强力驱动 | 
       主题-<a href="https://github.com/ShanaMaid/hexo-theme-shana" target="_blank" rel="noopener">Shana</a>
       
