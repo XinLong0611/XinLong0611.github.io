@@ -13,8 +13,11 @@
 <meta property="og:site_name" content="望星Along-blog">
 <meta property="og:description" content="在菜鸟教程上学习Markdown简要记录">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-11-26T08:51:54.309Z">
+<meta property="og:image" content="https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;XinLong0611&#x2F;XinLong0611.github.io&#x2F;master&#x2F;images&#x2F;MarkDown%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0&#x2F;2%20-%20%E5%89%AF%E6%9C%AC.jpg">
+<meta property="og:image" content="https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;XinLong0611&#x2F;XinLong0611.github.io&#x2F;master&#x2F;images&#x2F;MarkDown%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0&#x2F;2%20-%20%E5%89%AF%E6%9C%AC.jpg">
+<meta property="og:updated_time" content="2019-11-26T09:36:22.081Z">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;XinLong0611&#x2F;XinLong0611.github.io&#x2F;master&#x2F;images&#x2F;MarkDown%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0&#x2F;2%20-%20%E5%89%AF%E6%9C%AC.jpg">
   
     <link rel="alternate" href="/atom.xml" title="望星Along-blog" type="application/atom+xml">
   
@@ -173,7 +176,8 @@
 <blockquote>
 <p>脚注<a href="温柔的博主大大">^望星Along</a></p>
 </blockquote>
-<p>输出结果：<br>脚注 <a href="温柔的博主大大">^望星Along</a></p>
+<p>输出结果：</p>
+<p>脚注<a href="温柔的博主大大">^望星Along</a></p>
 <hr>
 <h3 id="6-列表"><a href="#6-列表" class="headerlink" title="6.列表"></a>6.列表</h3><h4 id="6-1无序列表"><a href="#6-1无序列表" class="headerlink" title="6.1无序列表"></a>6.1无序列表</h4><p>无序列表使用星号(*)、加号(+)或是减号(-)作为列表标记，注意<strong>符号与文本之间要有空格</strong>。</p>
 <hr>
@@ -294,12 +298,69 @@
 <p>输出结果：<br><a href="https://www.baidu.com/" target="_blank" rel="noopener">百度</a></p>
 <hr>
 <h3 id="10-图片"><a href="#10-图片" class="headerlink" title="10.图片"></a>10.图片</h3><hr>
-<p>![图片显示不出来显示此段文本](.\images\MarkDown学习笔记\2 - 副本.jpg)</p>
+<p>编辑样式：</p>
+<blockquote>
+<p>![图片属性文本](图片地址 “可选标题（可以不要）”)</p>
+</blockquote>
+<p>输出结果：<br><img src="https://raw.githubusercontent.com/XinLong0611/XinLong0611.github.io/master/images/MarkDown%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/2%20-%20%E5%89%AF%E6%9C%AC.jpg" alt="Saber" title="title"><br>设置可选标题之后，鼠标触碰图片显示该段文本。<br>图片地址获取方法自己查找，提供一个知乎的回答：<br>插入图片技巧：<a href="https://www.zhihu.com/question/21065229" target="_blank" rel="noopener">https://www.zhihu.com/question/21065229</a><br>插入图片也可以使用变量，参考高级链接。<br>想要设置图片的宽和高就使用&lt;img&gt;标签。<br>编辑样式：</p>
+<blockquote>
+<p>&lt;img src=”<a href="https://raw.githubusercontent.com/XinLong0611/XinLong0611.github.io/master/images/MarkDown%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/2%20-%20%E5%89%AF%E6%9C%AC.jpg&quot;" target="_blank" rel="noopener">https://raw.githubusercontent.com/XinLong0611/XinLong0611.github.io/master/images/MarkDown%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/2%20-%20%E5%89%AF%E6%9C%AC.jpg&quot;</a> width=”100px” height=”225px”&gt;</p>
+</blockquote>
+<p>输出结果：<br><img src="https://raw.githubusercontent.com/XinLong0611/XinLong0611.github.io/master/images/MarkDown%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/2%20-%20%E5%89%AF%E6%9C%AC.jpg" width="100px" height="225px"></p>
+<hr>
+<h3 id="11-表格"><a href="#11-表格" class="headerlink" title="11.表格"></a>11.表格</h3><p><strong>在本博客上看不明显，可以在Typora上实时预览。</strong><br>使用<code>|</code>来分割不同的单元格，使用<code>-</code>来分割表头和其他行。<br>编辑样式：</p>
+<blockquote>
+<p><code>|</code> 表头 <code>|</code> 表头 <code>|</code> 表头 <code>|</code><br><code>|</code> <code>---</code> <code>|</code> <code>---</code> <code>|</code> <code>---:</code> <code>|</code><br><code>|</code> 单元格 <code>|</code> 单元格 <code>|</code> 单元格 <code>|</code><br><code>|</code> 单元格 <code>|</code> 单元格 <code>|</code> 单元格 <code>|</code></p>
+</blockquote>
+<p>输出结果：</p>
+<table>
+<thead>
+<tr>
+<th>表头</th>
+<th>表头</th>
+<th>表头</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>单元格</td>
+<td>单元格</td>
+<td>单元格</td>
+</tr>
+<tr>
+<td>单元格</td>
+<td>单元格</td>
+<td>单元格</td>
+</tr>
+</tbody></table>
+<p>表格中的对齐方式：<br><code>-:</code>右对齐。<br><code>:-:</code>居中对齐。<br><code>:-</code>左对齐<br>编辑样式：</p>
+<blockquote>
+<p><code>|</code> 左对齐 <code>|</code> 居中 <code>|</code> 右对齐 <code>|</code><br><code>|</code> <code>:---</code> <code>|</code> <code>:---:</code> <code>|</code> <code>---:</code> <code>|</code><br><code>|</code> 单元格 <code>|</code> 单元格 <code>|</code> 单元格 <code>|</code><br><code>|</code> 单元格 <code>|</code> 单元格 <code>|</code> 单元格 <code>|</code></p>
+</blockquote>
+<p>输出结果：</p>
+<table>
+<thead>
+<tr>
+<th align="left">左对齐</th>
+<th align="center">居中</th>
+<th align="right">右对齐</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">单元格</td>
+<td align="center">单元格</td>
+<td align="right">单元格</td>
+</tr>
+<tr>
+<td align="left">单元格</td>
+<td align="center">单元格</td>
+<td align="right">单元格</td>
+</tr>
+</tbody></table>
 <h1 id="Continue…"><a href="#Continue…" class="headerlink" title="Continue…"></a>Continue…</h1>
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/11/25/MarkDown%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" data-id="ck3fmksxf000068w18w5jcsqm" class="article-share-link">分享</a>
+      <a data-url="http://yoursite.com/2019/11/25/MarkDown%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" data-id="ck3fo3kq10000cww1ghwhexox" class="article-share-link">分享</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%A0%87%E7%AD%BE1-%E6%A0%87%E7%AD%BE2/" rel="tag">-标签1 -标签2</a></li></ul>
