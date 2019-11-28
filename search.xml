@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>MarkDown学习笔记</title>
+    <url>/2019/11/25/MarkDown%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<p>记录Markdown的一些常用语法，满足基本的Markdown使用。</p>
+<a id="more"></a>
+<hr>
+<!--
+1. [标题](#title)
+2. [字体](#font)
+3. [分割线](#cutoff)
+4. [删除线](#strickout)
+5. [下划线](#underline)
+6. [脚注](#footnote)
+7. [列表](#list)
+    7.1 [无序列表](list1)
+    7.2 [有序列表](list2)
+    7.3 [列表嵌套](list3)
+8. [引用](#quote)
+9. [代码](#code)
+10. [链接](#link)
+11. [高级链接](highlink)
+12. [图片](#image)
+13. [表格](#table)
+14. [高级技巧](#skill)
+    14.1 [支持的HTML元素](#html)
+    14.2. [转义](#transferred)
+
+****
+-->
+<h2 id="工具推荐"><a href="#工具推荐" class="headerlink" title="工具推荐"></a>工具推荐</h2><hr>
+<p><strong>Typora</strong>：<a href="https://typora.io/" target="_blank" rel="noopener">https://typora.io/</a><br><strong>Atom</strong>：<a href="https://atom.io/" target="_blank" rel="noopener">https://atom.io/</a><br>两个都是很不错的Markdown编辑器，Typora使用更加的方便，配合快捷键的使用能够实现快速编辑，能够实时预览，使用教程可以去网上找，推荐一个不错的教程。<br><strong>Typora使用教程</strong>：<a href="https://blog.csdn.net/WeiDelight/article/details/81011921" target="_blank" rel="noopener">https://blog.csdn.net/WeiDelight/article/details/81011921</a><br>Atom不再多说，自行了解。</p>
+<hr>
+<h2 id="Game-Start"><a href="#Game-Start" class="headerlink" title="Game Start!"></a>Game Start!</h2><h3 id="1-标题"><a href="#1-标题" class="headerlink" title="1.标题"></a><span id="title">1.标题</span></h3><p>标题用#，注意<strong>符号与文本之间要有空格</strong></p>
+<hr>
+<p>编辑样式：</p>
+<blockquote>
+<p># 一级标题<br>## 二级标题<br>### 三级标题<br>#### 四级标题</p>
+</blockquote>
+<p>输出结果：<br><img src="https://raw.githubusercontent.com/XinLong0611/images/master/title.png"></p>
+<hr>
+<h3 id="2-字体"><a href="#2-字体" class="headerlink" title="2.字体"></a><span id ="font">2.字体</span></h3><hr>
+<p>编辑样式：</p>
+<blockquote>
+<p>*斜体*<br>_斜体_<br>**粗体**<br>__粗体__<br>***粗斜体***<br>___粗斜体___</p>
+</blockquote>
+<p>输出结果：</p>
+<blockquote>
+<p><em>斜体</em><br><em>斜体</em><br><strong>粗体</strong><br><strong>粗体</strong><br><strong><em>粗斜体</em></strong><br><strong><em>粗斜体</em></strong></p>
+</blockquote>
+<hr>
+<h3 id="3-分割线"><a href="#3-分割线" class="headerlink" title="3.分割线"></a><span id ="cutoff">3.分割线</span></h3><hr>
+<p>三个以上的星号（*）或减号（-）。<br>编辑样式：</p>
+<blockquote>
+<p>***<br>* * *<br>******<br>---<br>- - -<br>-------</p>
+</blockquote>
+<p>输出结果：</p>
+<blockquote>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+</blockquote>
+<hr>
+<h3 id="4-删除线"><a href="#4-删除线" class="headerlink" title="4.删除线"></a><span id ="underline">4.删除线</span></h3><p>内容两边加两个波浪线（~~）</p>
+<hr>
+<p>编辑样式：</p>
+<blockquote>
+<p>~~删除线~~</p>
+</blockquote>
+<p>输出结果：</p>
+<blockquote>
+<p><del>删除线</del></p>
+</blockquote>
+<hr>
+<h3 id="5-下划线"><a href="#5-下划线" class="headerlink" title="5.下划线"></a><span id ="underline">5.下划线</span></h3><p>使用HTML的&lt;u&gt;标签</p>
+<hr>
+<p>编辑样式：</p>
+<blockquote>
+<p>&lt;u&gt;下划线&lt;/u&gt;</p>
+</blockquote>
+<p>输出结果：</p>
+<blockquote>
+<p><u>下划线</u></p>
+</blockquote>
+<hr>
+<h3 id="6-脚注"><a href="#6-脚注" class="headerlink" title="6.脚注"></a><span id ="footnote">6.脚注</span></h3><p>脚注是对文本的补充说明，鼠标移至脚注上会显示说明。</p>
+<hr>
+<p>编辑样式：</p>
+<blockquote>
+<p>脚注[^望星Along]</p>
+<p>[^望星Along]: 温柔的博主大大</p>
+</blockquote>
+<p>输出结果：</p>
+<p>脚注<a href="温柔的博主大大">^望星Along</a></p>
+<hr>
+<h3 id="7-列表"><a href="#7-列表" class="headerlink" title="7.列表"></a><span id ="list">7.列表</span></h3><h4 id="7-1无序列表"><a href="#7-1无序列表" class="headerlink" title="7.1无序列表"></a><span id ="list1">7.1无序列表</span></h4><p>无序列表使用星号(*)、加号(+)或是减号(-)作为列表标记，注意<strong>符号与文本之间要有空格</strong>。</p>
+<hr>
+<p>编辑样式：</p>
+<blockquote>
+<p>* item1<br>* item2<br>+ item1<br>+ item2<br>- item1<br>- item2</p>
+</blockquote>
+<p>输出结果：</p>
+<blockquote>
+<ul>
+<li>item1</li>
+<li>item2</li>
+</ul>
+<ul>
+<li>item1</li>
+<li>item2</li>
+</ul>
+<ul>
+<li>item1</li>
+<li>item2</li>
+</ul>
+</blockquote>
+<hr>
+<h4 id="7-2有序列表"><a href="#7-2有序列表" class="headerlink" title="7.2有序列表"></a><span id ="list2">7.2有序列表</span></h4><p>有序列表使用数字加点（.）来表示。</p>
+<hr>
+<p>编辑样式：</p>
+<blockquote>
+<ol>
+<li>item1</li>
+<li>item2</li>
+</ol>
+</blockquote>
+<p>输出结果：</p>
+<blockquote>
+<ol>
+<li>item1</li>
+<li>item2</li>
+</ol>
+</blockquote>
+<h4 id="7-3列表嵌套"><a href="#7-3列表嵌套" class="headerlink" title="7.3列表嵌套"></a><span id ="list3">7.3列表嵌套</span></h4><p>子列表前加四个空格。</p>
+<hr>
+<p>编辑样式：</p>
+<blockquote>
+<ol>
+<li>item1<br>- item1.1<br>- item1.2</li>
+<li>item2<br>- item2.1<br>- item2.2</li>
+</ol>
+</blockquote>
+<p>输出结果：</p>
+<blockquote>
+<ol>
+<li>item1<ul>
+<li>item1.1</li>
+<li>item1.2</li>
+</ul>
+</li>
+<li>item2<ul>
+<li>item2.1</li>
+<li>item2.1</li>
+</ul>
+</li>
+</ol>
+</blockquote>
+<hr>
+<h3 id="8-引用"><a href="#8-引用" class="headerlink" title="8.引用"></a><span id ="quote">8.引用</span></h3><p>使用符号&gt;。</p>
+<hr>
+<p>编辑样式：</p>
+<blockquote>
+<p>&gt;引用1<br>&gt;引用2</p>
+</blockquote>
+<p>输出样式：</p>
+<blockquote>
+<p>引用1<br>引用2  </p>
+</blockquote>
+<p>嵌套用多个&gt;</p>
+<hr>
+<p>编辑样式：</p>
+<blockquote>
+<p>&gt; 引用1<br>&gt;&gt; 引用1.1<br>&gt;&gt;&gt; 引用1.1.1</p>
+</blockquote>
+<p>输出样式：</p>
+<blockquote>
+<p>引用1</p>
+<blockquote>
+<p>引用1.1</p>
+<blockquote>
+<p>引用1.1.1</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p><strong>区块引用也可以和列表嵌套使用。</strong></p>
+<hr>
+<h3 id="9-代码"><a href="#9-代码" class="headerlink" title="9.代码"></a><span id ="code">9.代码</span></h3><p>段落中使用代码可以用`包括起来。</p>
+<hr>
+<p>编辑样式：</p>
+<blockquote>
+<p>输出函数：`print()`</p>
+</blockquote>
+<p>输出结果：</p>
+<blockquote>
+<p>输出函数：<code>print()</code></p>
+</blockquote>
+<p>代码区块使用3个`符号,可以指定语言,指定语言之后能够使代码高亮。<br>编辑样式：<br>``` java<br>int add(int a,int b){<br>  return a + b;<br>}<br>```<br>输出结果：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">add</span><span class="params">(<span class="keyword">int</span> a,<span class="keyword">int</span> b)</span></span>&#123;</span><br><span class="line">  <span class="keyword">return</span> a + b;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<hr>
+<h3 id="10-链接"><a href="#10-链接" class="headerlink" title="10.链接"></a><span id ="link">10.链接</span></h3><hr>
+<p>编辑样式：</p>
+<blockquote>
+<p>[链接](链接地址)<br>或者<br>&lt;链接地址&gt;</p>
+</blockquote>
+<p>输出结果：<br><a href="https://www.baidu.com/" target="_blank" rel="noopener">百度</a><br><a href="https://www.baidu.com/" target="_blank" rel="noopener">https://www.baidu.com/</a></p>
+<hr>
+<h3 id="11-高级链接"><a href="#11-高级链接" class="headerlink" title="11.高级链接"></a><span id ="highlink">11.高级链接</span></h3><p>链接也可以用变量来代替，文档末尾附带变量地址，注意，<strong>两行之间至少空一行</strong>。<br>编辑样式：</p>
+<blockquote>
+<p>[链接][链接变量名]</p>
+<p>[链接变量名]: 链接地址</p>
+</blockquote>
+<p>输出结果：<br><a href="https://www.baidu.com/" target="_blank" rel="noopener">百度</a></p>
+<hr>
+<h3 id="12-图片"><a href="#12-图片" class="headerlink" title="12.图片"></a><span id ="image">12.图片</span></h3><hr>
+<p>编辑样式：</p>
+<blockquote>
+<p>![图片属性文本](图片地址 “可选标题（可以不要）”)</p>
+</blockquote>
+<p>输出结果：<br><img src="https://raw.githubusercontent.com/XinLong0611/XinLong0611.github.io/master/images/MarkDown%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/2%20-%20%E5%89%AF%E6%9C%AC.jpg" alt="Saber" title="title"><br>设置可选标题之后，鼠标触碰图片显示该段文本。<br>图片地址获取方法自己查找，提供一个知乎的回答：<br>插入图片技巧：<a href="https://www.zhihu.com/question/21065229" target="_blank" rel="noopener">https://www.zhihu.com/question/21065229</a><br>插入图片也可以使用变量，参考高级链接。<br>想要设置图片的宽和高就使用&lt;img&gt;标签。<br>编辑样式：</p>
+<blockquote>
+<p>&lt;img src=”<a href="https://raw.githubusercontent.com/XinLong0611/XinLong0611.github.io/master/images/MarkDown%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/2%20-%20%E5%89%AF%E6%9C%AC.jpg&quot;" target="_blank" rel="noopener">https://raw.githubusercontent.com/XinLong0611/XinLong0611.github.io/master/images/MarkDown%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/2%20-%20%E5%89%AF%E6%9C%AC.jpg&quot;</a> width=”100px” height=”225px”&gt;</p>
+</blockquote>
+<p>输出结果：<br><img src="https://raw.githubusercontent.com/XinLong0611/XinLong0611.github.io/master/images/MarkDown%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/2%20-%20%E5%89%AF%E6%9C%AC.jpg" width="100px" height="225px"></p>
+<hr>
+<h3 id="13-表格"><a href="#13-表格" class="headerlink" title="13.表格"></a><span id ="table">13.表格</span></h3><p><strong>在本博客上看不明显，可以在Typora上实时预览。</strong><br>使用<code>|</code>来分割不同的单元格，使用<code>-</code>来分割表头和其他行。<br>编辑样式：</p>
+<blockquote>
+<p><code>|</code> 表头 <code>|</code> 表头 <code>|</code> 表头 <code>|</code><br><code>|</code> <code>---</code> <code>|</code> <code>---</code> <code>|</code> <code>---:</code> <code>|</code><br><code>|</code> 单元格 <code>|</code> 单元格 <code>|</code> 单元格 <code>|</code><br><code>|</code> 单元格 <code>|</code> 单元格 <code>|</code> 单元格 <code>|</code></p>
+</blockquote>
+<p>输出结果：</p>
+<table>
+<thead>
+<tr>
+<th>表头</th>
+<th>表头</th>
+<th>表头</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>单元格</td>
+<td>单元格</td>
+<td>单元格</td>
+</tr>
+<tr>
+<td>单元格</td>
+<td>单元格</td>
+<td>单元格</td>
+</tr>
+</tbody></table>
+<p>表格中的对齐方式：<br><code>-:</code>右对齐。<br><code>:-:</code>居中对齐。<br><code>:-</code>左对齐<br>编辑样式：</p>
+<blockquote>
+<p><code>|</code> 左对齐 <code>|</code> 居中 <code>|</code> 右对齐 <code>|</code><br><code>|</code> <code>:---</code> <code>|</code> <code>:---:</code> <code>|</code> <code>---:</code> <code>|</code><br><code>|</code> 单元格 <code>|</code> 单元格 <code>|</code> 单元格 <code>|</code><br><code>|</code> 单元格 <code>|</code> 单元格 <code>|</code> 单元格 <code>|</code></p>
+</blockquote>
+<p>输出结果：</p>
+<table>
+<thead>
+<tr>
+<th align="left">左对齐</th>
+<th align="center">居中</th>
+<th align="right">右对齐</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">单元格</td>
+<td align="center">单元格</td>
+<td align="right">单元格</td>
+</tr>
+<tr>
+<td align="left">单元格</td>
+<td align="center">单元格</td>
+<td align="right">单元格</td>
+</tr>
+<tr>
+<td align="left">***</td>
+<td align="center"></td>
+<td align="right"></td>
+</tr>
+</tbody></table>
+<h3 id="14-高级技巧"><a href="#14-高级技巧" class="headerlink" title="14.高级技巧"></a><span id ="skill">14.高级技巧</span></h3><hr>
+<h4 id="14-1支持的HTML元素"><a href="#14-1支持的HTML元素" class="headerlink" title="14.1支持的HTML元素"></a><span id ="html">14.1支持的HTML元素</span></h4><p>不在 Markdown 涵盖范围之内的标签，都可以直接在文档里面用 HTML 撰写。<br>目前支持的 HTML 元素有：<kbd> <b> <i> <em> <sup> <sub> <br>等。</p>
+<hr>
+<p>编辑样式：</p>
+<blockquote>
+<p>使用 <code>&lt;kbd&gt;</code>Ctrl<code>&lt;/kbd&gt;</code>+<code>&lt;kbd&gt;</code>Alt<code>&lt;/kbd&gt;</code>+<code>&lt;kbd&gt;</code>Del<code>&lt;/kbd&gt;</code> 重启电脑</p>
+</blockquote>
+<p>输出结果：<br>使用 <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Del</kbd> 重启电脑</p>
+<hr>
+<h4 id="14-2转义"><a href="#14-2转义" class="headerlink" title="14.2转义"></a><span id ="transferred">14.2转义</span></h4><p>Markdown 使用了很多特殊符号来表示特定的意义，如果需要显示特定的符号则需要使用转义字符，Markdown 使用反斜杠（<code>\</code>）转义特殊字符。</p>
+<blockquote>
+<p>\* \* 正常显示星号 \* \*<br>**粗体**</p>
+</blockquote>
+<p>结果显示：</p>
+<blockquote>
+<p>\ *\ *正常显示星号\ *\ *<br><strong>粗体</strong></p>
+</blockquote>
+<hr>
+<h3 id="15-注释"><a href="#15-注释" class="headerlink" title="15.注释"></a>15.注释</h3><hr>
+<h4 id="15-1HTML标签"><a href="#15-1HTML标签" class="headerlink" title="15.1HTML标签"></a>15.1HTML标签</h4><p>可以使用HTML标签中的注释<code>&lt;!-- --&gt;</code>，使用这种方法在Markdown被渲染之后可以在源代码中查看到。</p>
+<hr>
+<p>编辑样式：</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 这是注释！ --&gt;</span></span><br></pre></td></tr></table></figure>
+<hr>
+<!-- 这是注释 -->
+<p>输出结果可以通过源代码查看。</p>
+<h4 id="15-2链接标签样式"><a href="#15-2链接标签样式" class="headerlink" title="15.2链接标签样式"></a>15.2链接标签样式</h4><p>如果希望在Markdown渲染之后（查看源代码）看不到这段注释就使用链接标签样式。</p>
+<hr>
+<p>编辑样式：</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">[<span class="symbol">注释</span>]: <span class="link">&lt;&gt; (这是一段注释)</span></span><br><span class="line">[<span class="symbol">//</span>]: <span class="link">&lt;&gt; (这是一段注释)</span></span><br></pre></td></tr></table></figure>
+<p>输出结果无法通过源代码查看。<br>为了提高平台的兼容性，你还可以使用<code>#</code>代替<code>&lt;&gt;</code>。<br>编辑样式：</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">[<span class="symbol">//</span>]: <span class="link"># (这是一段注释)</span></span><br></pre></td></tr></table></figure>
+<h2 id="Game-Clearance"><a href="#Game-Clearance" class="headerlink" title="Game Clearance!!!"></a>Game Clearance!!!</h2>]]></content>
+      <categories>
+        <category>开发工具</category>
+      </categories>
+      <tags>
+        <tag>Markdown</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Python中Pandas简单使用</title>
+    <url>/2019/11/25/Python%E4%B8%ADPandas%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8/</url>
+    <content><![CDATA[<p>##</p>
+]]></content>
+      <categories>
+        <category>-分类1 -分类2</category>
+      </categories>
+      <tags>
+        <tag>-标签1 -标签2</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>我的第一个博客</title>
+    <url>/2019/11/22/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2/</url>
+    <content><![CDATA[<h2 id="我的第一个博客"><a href="#我的第一个博客" class="headerlink" title="我的第一个博客"></a>我的第一个博客</h2><h4 id="测试code"><a href="#测试code" class="headerlink" title="测试code"></a>测试code</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">print(&quot;Hello World!&quot;)</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>这是一个分类</category>
+      </categories>
+      <tags>
+        <tag>这是一个标签</tag>
+      </tags>
+  </entry>
+</search>
