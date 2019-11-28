@@ -3,9 +3,7 @@
   <entry>
     <title>MarkDown学习笔记</title>
     <url>/2019/11/25/MarkDown%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
-    <content><![CDATA[<p>记录Markdown的一些常用语法，满足基本的Markdown使用。</p>
-<a id="more"></a>
-<hr>
+    <content><![CDATA[<hr>
 <!--
 1. [标题](#title)
 2. [字体](#font)
