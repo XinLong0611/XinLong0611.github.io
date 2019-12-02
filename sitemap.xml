@@ -2,13 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://xinlong0611.github.io/404.html</loc>
-    
-    <lastmod>2019-12-02T13:36:40.011Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://xinlong0611.github.io/2019/12/01/Markdown%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7%E4%B9%8B%E6%8F%92%E5%85%A5%E9%9F%B3%E9%A2%91/</loc>
     
     <lastmod>2019-12-02T02:25:10.916Z</lastmod>
@@ -61,6 +54,20 @@
     <loc>http://xinlong0611.github.io/categories/index.html</loc>
     
     <lastmod>2019-11-27T05:38:38.490Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://xinlong0611.github.io/404.html</loc>
+    
+    <lastmod>2019-07-17T09:41:02.748Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://xinlong0611.github.io/m/index.html</loc>
+    
+    <lastmod>2019-06-18T02:28:21.265Z</lastmod>
     
   </url>
   
