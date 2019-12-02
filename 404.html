@@ -90,13 +90,17 @@
 
 
 
+<meta name="description" content="带音乐的404错误页面源码模板 - 代码库 		 		 		 		 		 		 		  		 		 		 				     		var system ={};     	var p = navigator.platform;         system.win = p.indexOf(&quot;Win&quot;) == 0;         system.mac = p.indexOf(&quot;">
 <meta property="og:type" content="website">
 <meta property="og:title" content="望星Along-blog">
 <meta property="og:url" content="http:&#x2F;&#x2F;xinlong0611.github.io&#x2F;404.html">
 <meta property="og:site_name" content="望星Along-blog">
+<meta property="og:description" content="带音乐的404错误页面源码模板 - 代码库 		 		 		 		 		 		 		  		 		 		 				     		var system ={};     	var p = navigator.platform;         system.win = p.indexOf(&quot;Win&quot;) == 0;         system.mac = p.indexOf(&quot;">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-11-28T08:57:41.002Z">
+<meta property="og:image" content="http:&#x2F;&#x2F;xinlong0611.github.io&#x2F;img&#x2F;20171216094159_QaLXP.jpeg">
+<meta property="og:updated_time" content="2019-12-02T13:36:40.011Z">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http:&#x2F;&#x2F;xinlong0611.github.io&#x2F;img&#x2F;20171216094159_QaLXP.jpeg">
 
 
 
@@ -310,7 +314,7 @@
       <div class="post-body">
         
         
-          <!DOCTYPE HTML>
+          <!--<!DOCTYPE HTML>
 <html>
 <head>
   <meta http-equiv="content-type" content="text/html;charset=utf-8;"/>
@@ -328,7 +332,83 @@
   <script src="https://qzone.qq.com/gy/404/data.js" charset="utf-8"></script>
   <script src="https://qzone.qq.com/gy/404/page.js" charset="utf-8"></script>
 </body>
+</html>-->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>带音乐的404错误页面源码模板 - 代码库</title>
+		<meta name="description" content="Some ideas for modern button styles and effects" />
+		<meta name="keywords" content="button, effect, hover, style, inspiration, web design" />
+		<meta name="author" content="Codrops" />
+		<link href="img/15.0904011.ico" mce_href="favicon.ico" rel="shortcut icon" type="img/15.0904011.ico" />
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.beattext.js"></script>
+		<script type="text/javascript" src="js/easying.js"></script>
+
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/button.css" />
+		<link rel="stylesheet" href="css/reset.css"  />
+				  <script type="text/javascript">
+  		var system ={};
+    	var p = navigator.platform;
+        system.win = p.indexOf("Win") == 0;
+        system.mac = p.indexOf("Mac") == 0;
+       system.x11 = (p == "X11") || (p.indexOf("Linux") == 0);
+       if(system.win||system.mac||system.xll){//如果是电脑跳转到
+               window.location.href="#";
+       }else{  //如果是手机,跳转到
+              window.location.href="m/index.html";
+        }
+ </script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+		$('p#roloadText').beatText({isAuth:true,beatHeight:"1em",isRotate:false,upTime:100,downTime:100});
+		});
+		</script>
+	</head>
+	<!--/************************************************************
+ *																*
+ * 						      代码库							*
+ *                        www.dmaku.com							*
+ *       		  努力创建完善、持续更新插件以及模板			*
+ * 																*
+**************************************************************-->
+	<body>
+
+		<div class="logo" id="a" onClick="a();" title="点击我有惊喜！">
+				<img src="img/20171216094159_QaLXP.jpeg">
+			</div>
+			<br /><br />
+			<div class="container">
+		<p id="roloadText">404！网页君找不到这个网页了哦...</p>
+	</div>
+
+		<div class="box bg-1">
+				<button class="button button--antiman button--round-l button--text-medium" onClick="window.open('http://www.dmaku.com')"><span>返回首页</span></button>
+	</div>
+	</div>
+	<div class="body_buttom">
+
+
+<audio autoplay loop id="music">
+<source src="music/music.mp3" type="audio/mpeg">
+</audio>
+<script>
+   function a(){
+     var audio = document.getElementById('music');
+     if(audio.paused){
+         audio.play();//audio.play();// 播放
+     }
+     else{
+          audio.pause();// 暂停
+     }
+   }
+</script>
+	</body>
 </html>
+
         
       </div>
       
