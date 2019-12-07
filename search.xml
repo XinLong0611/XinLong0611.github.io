@@ -1,17 +1,109 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Markdown使用技巧之插入音频</title>
-    <url>/post/undefined.html</url>
+    <title>C++中int转string、char和int互转</title>
+    <url>/2019/12/07/C++%E4%B8%ADint%E8%BD%ACstring%E3%80%81char%E5%92%8Cint%E4%BA%92%E8%BD%AC/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><hr>
 <p>测试用，可以随便听听。<br><audio src="http://link.hhtjim.com/163/464863017.mp3" style="width: 100%; max-height :100%; max-width: 100%; display: block; margin-left: auto; margin-right: auto;" controls="controls" loop="loop" preload="meta">你的浏览器不支持这个标签。</audio></p>
 
-        <div id="aplayer-oqYXWcwr" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
+        <div id="aplayer-BxUtpHpa" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
             <pre class="aplayer-lrc-content"></pre>
         </div>
         <script>
           var ap = new APlayer({
-            element: document.getElementById("aplayer-oqYXWcwr"),
+            element: document.getElementById("aplayer-BxUtpHpa"),
+            narrow: false,
+            autoplay: false,
+            showlrc: false,
+            music: {
+              title: "Butter-Fly (MIX)",
+              author: "和田光司",
+              url: "http://link.hhtjim.com/163/29600327.mp3",
+              pic: "https://tvax3.sinaimg.cn/large/006TsOC4ly1g9g6dw1qe1j30sg0sgjtn.jpg",
+              lrc: ""
+            }
+          });
+          window.aplayers || (window.aplayers = []);
+          window.aplayers.push(ap);
+        </script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.7.0/dist/APlayer.min.css">
+<script src="https://cdn.jsdelivr.net/npm/aplayer@1.7.0/dist/APlayer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/meting@1.1.0/dist/Meting.min.js"></script>
+<div class="aplayer" data-id="3099548864" data-server="netease" data-type="playlist" data-mode="random" data-autoplay="true"></div>
+
+<hr>
+<h2 id="Geam-Start！"><a href="#Geam-Start！" class="headerlink" title="Geam Start！"></a>Geam Start！</h2><hr>
+<h3 id="int转string"><a href="#int转string" class="headerlink" title="int转string"></a>int转string</h3><p>在Java中，可以直接用字符串加上int类型的数，但是在C++中这种做法就行不通了，每次都把C++和Java搞混，写成下面的格式。</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> a = <span class="number">1</span>;</span><br><span class="line">    <span class="built_in">string</span> str = <span class="string">"STR"</span>;</span><br><span class="line">    str += a;</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; str &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>运行结果：<br><img src="https://tvax1.sinaimg.cn/large/006TsOC4ly1g9oizxn6ixj30ip0ef3yl.jpg" alt="C++1"></p>
+<hr>
+<p>int转string的方法有很多，我就记录一种可行的方法。</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> a = <span class="number">1</span>;</span><br><span class="line">    <span class="built_in">string</span> str = <span class="string">"STR"</span>;</span><br><span class="line">    <span class="built_in">stringstream</span> ss;</span><br><span class="line">    ss &lt;&lt; a;</span><br><span class="line">    str += ss.str();</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; str &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>运行结果：<br><img src="https://tvax3.sinaimg.cn/large/006TsOC4ly1g9ojac7a2sj30ip0ef3yl.jpg" alt="C++2"><br>不同的类型转换方法会根据C++编辑器的版本不同而不同，还要考虑到版本兼容的问题。</p>
+<hr>
+<h3 id="int和char互转"><a href="#int和char互转" class="headerlink" title="int和char互转"></a>int和char互转</h3><p>这个就很简单了，和Java一样，不过要注意，char转为int时，获得的值是该字符的ASCII码，同样的，int转char时，不能超过ASCII码表的最大值，代码如下：</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;string&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">char</span> ch1 = <span class="string">'1'</span>;</span><br><span class="line">    <span class="keyword">int</span> a1 = <span class="keyword">int</span>(ch1);</span><br><span class="line">    <span class="keyword">int</span> a2 = <span class="number">49</span>;</span><br><span class="line">    <span class="keyword">char</span> ch2 = <span class="keyword">char</span>(a2);</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; a1 &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; ch2 &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>运行结果：<br><img src="https://tva3.sinaimg.cn/large/006TsOC4ly1g9ojku9k3vj30ip0efq31.jpg" alt="C++3"></p>
+<hr>
+<h2 id="Game-Clearance"><a href="#Game-Clearance" class="headerlink" title="Game Clearance!!!"></a>Game Clearance!!!</h2>]]></content>
+  </entry>
+  <entry>
+    <title>操作系统——进程调度算法模拟</title>
+    <url>/2019/12/07/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E2%80%94%E2%80%94%E8%BF%9B%E7%A8%8B%E8%B0%83%E5%BA%A6%E7%AE%97%E6%B3%95%E6%A8%A1%E6%8B%9F/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><hr>
+<p>测试用，可以随便听听。<br><audio src="http://link.hhtjim.com/163/464863017.mp3" style="width: 100%; max-height :100%; max-width: 100%; display: block; margin-left: auto; margin-right: auto;" controls="controls" loop="loop" preload="meta">你的浏览器不支持这个标签。</audio></p>
+
+        <div id="aplayer-rCVVnXGJ" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
+            <pre class="aplayer-lrc-content"></pre>
+        </div>
+        <script>
+          var ap = new APlayer({
+            element: document.getElementById("aplayer-rCVVnXGJ"),
+            narrow: false,
+            autoplay: false,
+            showlrc: false,
+            music: {
+              title: "Butter-Fly (MIX)",
+              author: "和田光司",
+              url: "http://link.hhtjim.com/163/29600327.mp3",
+              pic: "https://tvax3.sinaimg.cn/large/006TsOC4ly1g9g6dw1qe1j30sg0sgjtn.jpg",
+              lrc: ""
+            }
+          });
+          window.aplayers || (window.aplayers = []);
+          window.aplayers.push(ap);
+        </script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.7.0/dist/APlayer.min.css">
+<script src="https://cdn.jsdelivr.net/npm/aplayer@1.7.0/dist/APlayer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/meting@1.1.0/dist/Meting.min.js"></script>
+<div class="aplayer" data-id="3099548864" data-server="netease" data-type="playlist" data-mode="random" data-autoplay="true"></div>
+
+<hr>
+<h2 id="Geam-Start！"><a href="#Geam-Start！" class="headerlink" title="Geam Start！"></a>Geam Start！</h2><hr>
+<h3 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h3><p>设计一个按优先数调度算法实现处理器调度的程序。<br>[提示]：<br>(1) 假定系统有五个进程，每一个进程用一个进程控制块PCB来代表，进程控制块的格式为：<br><img src="https://tvax3.sinaimg.cn/large/006TsOC4ly1g9oigzk1ioj304f032a9u.jpg" alt="操作系统"><br>其中，进程名——作为进程的标识，假设五个进程的进程名分别为P1，P2，P3，P4，P5。<br>指针——按优先数的大小把五个进程连成队列，用指针指出下一个进程的进程控制块的首地址，最后一个进程中的指针为“0”。<br>要求运行时间——假设进程需要运行的单位时间数。<br>优先数——赋予进程的优先数，调度时总是选取优先数大的进程先执行。<br>状态——可假设有两种状态，“就绪8080”状态和“结束”状态。五个进程的初始状态都为“就绪”，用“R”表示，当一个进程运行结束后，它的状态为“结束”，用“E”表示。<br>(2) 在每次运行你所设计的处理器调度程序之前，为每个进程任意确定它的“优先数”和“要求运行时间”。本实验由于为了检查的方便，优先数和运行时间采用下表中的数值。<br>(3) 为了调度方便，把五个进程按给定的优先数从大到小连成队列。用一单元指出队首进程，用指针指出队列的连接情况。例：<br><img src="https://tvax2.sinaimg.cn/large/006TsOC4ly1g9oihd66clj30fw05bq2w.jpg" alt="操作系统"></p>
+<hr>
+<h3 id="实现代码"><a href="#实现代码" class="headerlink" title="实现代码"></a>实现代码</h3><p>确实是太菜，只能想到最笨的方法，但是在我看来代码很好理解，一步步都能看懂。</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">typedef</span> <span class="keyword">char</span> PROC_STATE;</span><br><span class="line"></span><br><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span> _<span class="title">proc</span></span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line">    <span class="keyword">char</span> name[<span class="number">32</span>];<span class="comment">//进程名</span></span><br><span class="line">    <span class="keyword">int</span> req_time;<span class="comment">//需要的运行时间，随机数产生</span></span><br><span class="line">    <span class="keyword">int</span> pri;<span class="comment">//优先级，随机数产生</span></span><br><span class="line">    PROC_STATE state;<span class="comment">//进程状态</span></span><br><span class="line">    <span class="class"><span class="keyword">struct</span> _<span class="title">proc</span> *<span class="title">next</span>;</span></span><br><span class="line">&#125; PROC;</span><br><span class="line"></span><br><span class="line"><span class="comment">//创建结构体，并为结构体中的属性赋值</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">PCB</span><span class="params">(PROC *P)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    PROC *p1,*p2,*p3;</span><br><span class="line">    p2 = P;</span><br><span class="line">    <span class="comment">//设置一个标志位，防止重复添加优先级相同的进程</span></span><br><span class="line">    <span class="keyword">int</span> flag[<span class="number">5</span>] = &#123;<span class="number">0</span>&#125;;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">1</span>; i &lt; <span class="number">6</span>; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        p1 = <span class="keyword">new</span> PROC;</span><br><span class="line"></span><br><span class="line">        <span class="comment">//进程的名字</span></span><br><span class="line">        <span class="built_in">stringstream</span> ss;</span><br><span class="line">        ss &lt;&lt; i;</span><br><span class="line">        <span class="built_in">string</span> temp = ss.str();</span><br><span class="line">        <span class="built_in">string</span> str = <span class="string">"P"</span> + temp;</span><br><span class="line">        <span class="comment">//cout &lt;&lt; str &lt;&lt; endl;</span></span><br><span class="line"></span><br><span class="line">        <span class="comment">//给进程命名，并得到进程名字的长度</span></span><br><span class="line">        <span class="keyword">int</span> len = str.copy(p1-&gt;name,<span class="number">31</span>);</span><br><span class="line">        <span class="comment">//在末尾加上结束符</span></span><br><span class="line">        p1-&gt;name[len] = <span class="string">'\0'</span>;</span><br><span class="line"></span><br><span class="line">        p1-&gt;req_time = rand() % <span class="number">8</span> + <span class="number">1</span>;</span><br><span class="line">        p1-&gt;pri = rand() % <span class="number">5</span> + <span class="number">1</span>;</span><br><span class="line">        p1-&gt;state = <span class="string">'R'</span>;</span><br><span class="line"></span><br><span class="line">        <span class="comment">//尾插</span></span><br><span class="line">        <span class="keyword">switch</span>(p1-&gt;pri)</span><br><span class="line">        &#123;</span><br><span class="line">        <span class="keyword">case</span> <span class="number">5</span>:</span><br><span class="line">            <span class="keyword">if</span>(flag[<span class="number">4</span>] == <span class="number">0</span>)<span class="comment">//判断是否出现相同优先级</span></span><br><span class="line">            &#123;</span><br><span class="line">                p1-&gt;next = P-&gt;next;</span><br><span class="line">                P-&gt;next = p1;</span><br><span class="line">                P = p1;</span><br><span class="line">                flag[<span class="number">4</span>] = <span class="number">1</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">else</span><span class="comment">//出现相同的优先级，并且已经插入过了，i减1重新生成</span></span><br><span class="line">            &#123;</span><br><span class="line">                i--;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        <span class="keyword">case</span> <span class="number">4</span>:</span><br><span class="line">            <span class="keyword">if</span>(flag[<span class="number">3</span>] == <span class="number">0</span>)</span><br><span class="line">            &#123;</span><br><span class="line">                p1-&gt;next = p2-&gt;next;</span><br><span class="line">                p2-&gt;next = p1;</span><br><span class="line">                p2 = p1;</span><br><span class="line">                flag[<span class="number">3</span>] = <span class="number">1</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">else</span></span><br><span class="line">            &#123;</span><br><span class="line">                i--;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        <span class="keyword">case</span> <span class="number">3</span>:</span><br><span class="line">            <span class="keyword">if</span>(flag[<span class="number">2</span>] == <span class="number">0</span>)</span><br><span class="line">            &#123;</span><br><span class="line">                p1-&gt;next = p2-&gt;next;</span><br><span class="line">                p2-&gt;next = p1;</span><br><span class="line">                p2 = p1;</span><br><span class="line">                flag[<span class="number">2</span>] = <span class="number">1</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">else</span></span><br><span class="line">            &#123;</span><br><span class="line">                i--;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        <span class="keyword">case</span> <span class="number">2</span>:</span><br><span class="line">            <span class="keyword">if</span>(flag[<span class="number">1</span>] == <span class="number">0</span>)</span><br><span class="line">            &#123;</span><br><span class="line">                p1-&gt;next = p2-&gt;next;</span><br><span class="line">                p2-&gt;next = p1;</span><br><span class="line">                p2 = p1;</span><br><span class="line">                flag[<span class="number">1</span>] = <span class="number">1</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">else</span></span><br><span class="line">            &#123;</span><br><span class="line">                i--;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        <span class="keyword">case</span> <span class="number">1</span>:</span><br><span class="line">            <span class="keyword">if</span>(flag[<span class="number">0</span>] == <span class="number">0</span>)</span><br><span class="line">            &#123;</span><br><span class="line">                p1-&gt;next = p2-&gt;next;</span><br><span class="line">                p2-&gt;next = p1;</span><br><span class="line">                p2 = p1;</span><br><span class="line">                flag[<span class="number">0</span>] = <span class="number">1</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">else</span></span><br><span class="line">            &#123;</span><br><span class="line">                i--;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">//将链按照P1，P2，P3，P4，P5的顺序排序连接</span></span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="number">4</span>; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        p2 = P;</span><br><span class="line">        p3 = P;</span><br><span class="line">        <span class="keyword">while</span>(p2-&gt;next != <span class="literal">NULL</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="comment">//p3是p2的前驱</span></span><br><span class="line">            p2=p2-&gt;next;</span><br><span class="line">            <span class="keyword">if</span>(p2-&gt;pri == (<span class="number">4</span> - i))</span><br><span class="line">            &#123;</span><br><span class="line">                p3-&gt;next = p2-&gt;next;</span><br><span class="line">                p2-&gt;next = P-&gt;next;</span><br><span class="line">                P-&gt;next = p2;</span><br><span class="line">                P = p2;</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            p3 = p3-&gt;next;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">myPrint</span><span class="params">(PROC *P)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="comment">//初始化头结点</span></span><br><span class="line">    P = <span class="keyword">new</span> PROC;</span><br><span class="line">    P-&gt;next = <span class="literal">NULL</span>;</span><br><span class="line">    PCB(P);</span><br><span class="line">    PROC *p1;</span><br><span class="line">    <span class="keyword">int</span> a = <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">1</span>; i &lt; <span class="number">7</span>; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">cout</span> &lt;&lt; <span class="string">"第"</span> &lt;&lt; i &lt;&lt; <span class="string">"次运行："</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">        <span class="built_in">cout</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">        <span class="comment">//每次都要重头遍历输出</span></span><br><span class="line">        p1 = P;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">while</span>(p1-&gt;next != <span class="literal">NULL</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            p1 = p1-&gt;next;</span><br><span class="line">            <span class="built_in">string</span> s = p1-&gt;name;</span><br><span class="line">            <span class="built_in">stringstream</span> ss;</span><br><span class="line">            ss &lt;&lt; a;</span><br><span class="line">            <span class="built_in">string</span> temp = ss.str();</span><br><span class="line">            <span class="built_in">string</span> name = <span class="string">"P"</span> + temp;</span><br><span class="line">            <span class="keyword">if</span>(s == name)<span class="comment">//按P1，P2，P3，P4，P5的顺序输出</span></span><br><span class="line">            &#123;</span><br><span class="line">                a++;</span><br><span class="line">                <span class="keyword">if</span>(p1-&gt;pri &gt; (<span class="number">6</span> - i))</span><br><span class="line">                &#123;</span><br><span class="line">                    p1-&gt;state = <span class="string">'E'</span>;</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="built_in">cout</span> &lt;&lt; <span class="string">"进程名："</span> &lt;&lt; p1-&gt;name &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">                <span class="built_in">cout</span> &lt;&lt; <span class="string">"指针："</span>;</span><br><span class="line">                <span class="keyword">if</span>(p1-&gt;next == <span class="literal">NULL</span>)</span><br><span class="line">                &#123;</span><br><span class="line">                    <span class="built_in">cout</span> &lt;&lt; <span class="string">"0"</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="keyword">else</span></span><br><span class="line">                &#123;</span><br><span class="line">                    <span class="built_in">cout</span> &lt;&lt; p1-&gt;next-&gt;name &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="built_in">cout</span> &lt;&lt; <span class="string">"要求运行时间："</span> &lt;&lt; p1-&gt;req_time &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">                <span class="built_in">cout</span> &lt;&lt; <span class="string">"优先数："</span> &lt;&lt; p1-&gt;pri &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">                <span class="built_in">cout</span> &lt;&lt; <span class="string">"状态："</span> &lt;&lt; p1-&gt;state &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">                <span class="built_in">cout</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">                <span class="keyword">if</span>(a == <span class="number">6</span>)<span class="comment">//直到输出P5跳出while循环</span></span><br><span class="line">                &#123;</span><br><span class="line">                    a = <span class="number">1</span>;</span><br><span class="line">                    <span class="keyword">break</span>;</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="keyword">else</span></span><br><span class="line">                &#123;</span><br><span class="line">                    p1 = P;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="built_in">cout</span> &lt;&lt; <span class="string">"************************"</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    PROC *P;</span><br><span class="line">    myPrint(P);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h3 id="运行结果"><a href="#运行结果" class="headerlink" title="运行结果"></a>运行结果</h3><p><img src="https://tva4.sinaimg.cn/large/006TsOC4ly1g9oiqxrop2j30fe0dmta0.jpg" alt="操作系统3"><br><img src="https://tvax2.sinaimg.cn/large/006TsOC4ly1g9oir6b82gj30fe0dmmyg.jpg" alt="操作系统4"><br><img src="https://tvax3.sinaimg.cn/large/006TsOC4ly1g9oirecb6ej30fe0dm0tz.jpg" alt="操作系统5"><br><img src="https://tva3.sinaimg.cn/large/006TsOC4ly1g9oirkqvxdj30fe0dm0tz.jpg" alt="操作系统6"><br><img src="https://tvax3.sinaimg.cn/large/006TsOC4ly1g9oirqz55rj30fe0dmwfq.jpg" alt="操作系统7"><br><img src="https://tvax1.sinaimg.cn/large/006TsOC4ly1g9oirxo5nmj30fe0dmgmt.jpg" alt="操作系统8"></p>
+<hr>
+<h2 id="Game-Clearance"><a href="#Game-Clearance" class="headerlink" title="Game Clearance!!!"></a>Game Clearance!!!</h2>]]></content>
+  </entry>
+  <entry>
+    <title>Markdown使用技巧之插入音频</title>
+    <url>/2019/12/01/Markdown%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7%E4%B9%8B%E6%8F%92%E5%85%A5%E9%9F%B3%E9%A2%91/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><hr>
+<p>测试用，可以随便听听。<br><audio src="http://link.hhtjim.com/163/464863017.mp3" style="width: 100%; max-height :100%; max-width: 100%; display: block; margin-left: auto; margin-right: auto;" controls="controls" loop="loop" preload="meta">你的浏览器不支持这个标签。</audio></p>
+
+        <div id="aplayer-blgnoBJE" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
+            <pre class="aplayer-lrc-content"></pre>
+        </div>
+        <script>
+          var ap = new APlayer({
+            element: document.getElementById("aplayer-blgnoBJE"),
             narrow: false,
             autoplay: false,
             showlrc: false,
@@ -101,16 +193,16 @@
   </entry>
   <entry>
     <title>Markdown使用技巧之插入图片</title>
-    <url>/post/undefined.html</url>
+    <url>/2019/11/30/Markdown%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7%E4%B9%8B%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><hr>
 <p>测试用，可以随便听听。<br><audio src="http://link.hhtjim.com/163/464863017.mp3" style="width: 100%; max-height :100%; max-width: 100%; display: block; margin-left: auto; margin-right: auto;" controls="controls" loop="loop" preload="meta">你的浏览器不支持这个标签。</audio></p>
 
-        <div id="aplayer-OiLYVbUZ" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
+        <div id="aplayer-ZQMBmBDZ" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
             <pre class="aplayer-lrc-content"></pre>
         </div>
         <script>
           var ap = new APlayer({
-            element: document.getElementById("aplayer-OiLYVbUZ"),
+            element: document.getElementById("aplayer-ZQMBmBDZ"),
             narrow: false,
             autoplay: false,
             showlrc: false,
@@ -151,16 +243,16 @@
   </entry>
   <entry>
     <title>MarkDown学习笔记</title>
-    <url>/post/undefined.html</url>
+    <url>/2019/11/25/MarkDown%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><hr>
 <p>测试用，可以随便听听。<br><audio src="http://link.hhtjim.com/163/464863017.mp3" style="width: 100%; max-height :100%; max-width: 100%; display: block; margin-left: auto; margin-right: auto;" controls="controls" loop="loop" preload="meta">你的浏览器不支持这个标签。</audio></p>
 
-        <div id="aplayer-MtFgNzEp" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
+        <div id="aplayer-SoshUdNa" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
             <pre class="aplayer-lrc-content"></pre>
         </div>
         <script>
           var ap = new APlayer({
-            element: document.getElementById("aplayer-MtFgNzEp"),
+            element: document.getElementById("aplayer-SoshUdNa"),
             narrow: false,
             autoplay: false,
             showlrc: false,
@@ -474,7 +566,7 @@
   </entry>
   <entry>
     <title>我的第一个博客</title>
-    <url>/post/undefined.html</url>
+    <url>/2019/11/22/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="我的第一个博客"><a href="#我的第一个博客" class="headerlink" title="我的第一个博客"></a>我的第一个博客</h2><h4 id="测试code"><a href="#测试code" class="headerlink" title="测试code"></a>测试code</h4><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">print(<span class="string">"Hello World!"</span>)</span><br></pre></td></tr></table></figure>
 
 <h4 id="测试公式"><a href="#测试公式" class="headerlink" title="测试公式"></a>测试公式</h4><figure class="highlight tex"><table><tr><td class="code"><pre><span class="line"><span class="formula">$<span class="tag">\<span class="name">Gamma</span></span>(n) = (n-1)!<span class="tag">\<span class="name">quad</span></span><span class="tag">\<span class="name">forall</span></span> n<span class="tag">\<span class="name">in</span></span><span class="tag">\<span class="name">mathbb</span></span> N$</span></span><br></pre></td></tr></table></figure>

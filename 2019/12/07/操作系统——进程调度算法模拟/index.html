@@ -79,7 +79,7 @@
 
 
 
-  <meta name="keywords" content="这是一个标签," />
+  <meta name="keywords" content="望星Along,学习分享博客,Markdown,操作系统,C++" />
 
 
 
@@ -90,16 +90,24 @@
 
 
 
-<meta name="description" content="这是一个描述">
-<meta name="keywords" content="这是一个标签">
+<meta name="description" content="确实是太菜，所以用的也是很笨的实现方法，不过感觉一步步都能看懂。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="我的第一个博客">
-<meta property="og:url" content="https:&#x2F;&#x2F;wangxingalong.club&#x2F;post&#x2F;undefined.html">
+<meta property="og:title" content="操作系统——进程调度算法模拟">
+<meta property="og:url" content="https:&#x2F;&#x2F;wangxingalong.club&#x2F;2019&#x2F;12&#x2F;07&#x2F;%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E2%80%94%E2%80%94%E8%BF%9B%E7%A8%8B%E8%B0%83%E5%BA%A6%E7%AE%97%E6%B3%95%E6%A8%A1%E6%8B%9F&#x2F;index.html">
 <meta property="og:site_name" content="望星Along-blog">
-<meta property="og:description" content="这是一个描述">
+<meta property="og:description" content="确实是太菜，所以用的也是很笨的实现方法，不过感觉一步步都能看懂。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-12-01T08:11:07.364Z">
+<meta property="og:image" content="https:&#x2F;&#x2F;tvax3.sinaimg.cn&#x2F;large&#x2F;006TsOC4ly1g9oigzk1ioj304f032a9u.jpg">
+<meta property="og:image" content="https:&#x2F;&#x2F;tvax2.sinaimg.cn&#x2F;large&#x2F;006TsOC4ly1g9oihd66clj30fw05bq2w.jpg">
+<meta property="og:image" content="https:&#x2F;&#x2F;tva4.sinaimg.cn&#x2F;large&#x2F;006TsOC4ly1g9oiqxrop2j30fe0dmta0.jpg">
+<meta property="og:image" content="https:&#x2F;&#x2F;tvax2.sinaimg.cn&#x2F;large&#x2F;006TsOC4ly1g9oir6b82gj30fe0dmmyg.jpg">
+<meta property="og:image" content="https:&#x2F;&#x2F;tvax3.sinaimg.cn&#x2F;large&#x2F;006TsOC4ly1g9oirecb6ej30fe0dm0tz.jpg">
+<meta property="og:image" content="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;large&#x2F;006TsOC4ly1g9oirkqvxdj30fe0dm0tz.jpg">
+<meta property="og:image" content="https:&#x2F;&#x2F;tvax3.sinaimg.cn&#x2F;large&#x2F;006TsOC4ly1g9oirqz55rj30fe0dmwfq.jpg">
+<meta property="og:image" content="https:&#x2F;&#x2F;tvax1.sinaimg.cn&#x2F;large&#x2F;006TsOC4ly1g9oirxo5nmj30fe0dmgmt.jpg">
+<meta property="og:updated_time" content="2019-12-07T14:20:44.074Z">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https:&#x2F;&#x2F;tvax3.sinaimg.cn&#x2F;large&#x2F;006TsOC4ly1g9oigzk1ioj304f032a9u.jpg">
 
 
 
@@ -129,13 +137,13 @@
 
 
 
-  <link rel="canonical" href="https://wangxingalong.club/post/undefined.html"/>
+  <link rel="canonical" href="https://wangxingalong.club/2019/12/07/操作系统——进程调度算法模拟/"/>
 
 
 
 
 
-  <title>我的第一个博客 | 望星Along-blog</title>
+  <title>操作系统——进程调度算法模拟 | 望星Along-blog</title>
   
 
 
@@ -147,6 +155,8 @@
 
   <script src="/live2d-widget/autoload.js"></script>
 <link rel="alternate" href="/atom.xml" title="望星Along-blog" type="application/atom+xml">
+<link rel="stylesheet" href="\assets\css\APlayer.min.css" class="aplayer-style-marker">
+<script src="\assets\js\APlayer.min.js" class="aplayer-script-marker"></script>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -309,7 +319,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://wangxingalong.club/post/undefined.html">
+    <link itemprop="mainEntityOfPage" href="https://wangxingalong.club/2019/12/07/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E2%80%94%E2%80%94%E8%BF%9B%E7%A8%8B%E8%B0%83%E5%BA%A6%E7%AE%97%E6%B3%95%E6%A8%A1%E6%8B%9F/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="望星Along">
@@ -326,7 +336,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">我的第一个博客</h1>
+          <h1 class="post-title" itemprop="name headline">操作系统——进程调度算法模拟</h1>
         
 
         <div class="post-meta">
@@ -336,8 +346,8 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-11-22T14:21:49+08:00">
-                2019-11-22
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-12-07T22:03:04+08:00">
+                2019-12-07
               </time>
             
 
@@ -350,32 +360,12 @@
                 <i class="fa fa-calendar-check-o"></i>
               </span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2019-12-01T16:11:07+08:00">
-                2019-12-01
+              <time title="更新于" itemprop="dateModified" datetime="2019-12-07T22:20:44+08:00">
+                2019-12-07
               </time>
             
           </span>
 
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E8%BF%99%E6%98%AF%E4%B8%80%E4%B8%AA%E5%88%86%E7%B1%BB/" itemprop="url" rel="index">
-                    <span itemprop="name">这是一个分类</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
           
 
           
@@ -385,8 +375,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/post/undefined.html#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/post/undefined.html" itemprop="commentCount"></span>
+                <a href="/2019/12/07/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E2%80%94%E2%80%94%E8%BF%9B%E7%A8%8B%E8%B0%83%E5%BA%A6%E7%AE%97%E6%B3%95%E6%A8%A1%E6%8B%9F/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/12/07/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E2%80%94%E2%80%94%E8%BF%9B%E7%A8%8B%E8%B0%83%E5%BA%A6%E7%AE%97%E6%B3%95%E6%A8%A1%E6%8B%9F/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -394,7 +384,7 @@
 
           
           
-             <span id="/post/undefined.html" class="leancloud_visitors" data-flag-title="我的第一个博客">
+             <span id="/2019/12/07/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E2%80%94%E2%80%94%E8%BF%9B%E7%A8%8B%E8%B0%83%E5%BA%A6%E7%AE%97%E6%B3%95%E6%A8%A1%E6%8B%9F/" class="leancloud_visitors" data-flag-title="操作系统——进程调度算法模拟">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -417,7 +407,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  62 字
+                  1.2k 字
                 </span>
               
 
@@ -433,7 +423,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  1 分钟
+                  5 分钟
                 </span>
               
             </div>
@@ -441,7 +431,7 @@
 
           
               <div class="post-description">
-                  这是一个描述
+                  确实是太菜，所以用的也是很笨的实现方法，不过感觉一步步都能看懂。
               </div>
           
 
@@ -458,13 +448,46 @@
       
 
       
-        <h2 id="我的第一个博客"><a href="#我的第一个博客" class="headerlink" title="我的第一个博客"></a>我的第一个博客</h2><h4 id="测试code"><a href="#测试code" class="headerlink" title="测试code"></a>测试code</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">print(<span class="string">"Hello World!"</span>)</span><br></pre></td></tr></table></figure>
+        <hr>
+<p>测试用，可以随便听听。<br><audio src="http://link.hhtjim.com/163/464863017.mp3" style="width: 100%; max-height :100%; max-width: 100%; display: block; margin-left: auto; margin-right: auto;" controls="controls" loop="loop" preload="meta">你的浏览器不支持这个标签。</audio></p>
 
-<h4 id="测试公式"><a href="#测试公式" class="headerlink" title="测试公式"></a>测试公式</h4><figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="formula">$<span class="tag">\<span class="name">Gamma</span></span>(n) = (n-1)!<span class="tag">\<span class="name">quad</span></span><span class="tag">\<span class="name">forall</span></span> n<span class="tag">\<span class="name">in</span></span><span class="tag">\<span class="name">mathbb</span></span> N$</span></span><br></pre></td></tr></table></figure>
-<p>$\Gamma(n) = (n-1)!\quad\forall n\in\mathbb N$</p>
-<figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="formula">$$</span></span><br><span class="line"><span class="formula"><span class="tag">\<span class="name">Gamma</span></span>(z) = <span class="tag">\<span class="name">int</span></span>_0^<span class="tag">\<span class="name">infty</span></span> t^&#123;z-1&#125;e^&#123;-t&#125;dt<span class="tag">\<span class="name">,</span></span>.</span></span><br><span class="line"><span class="formula">$$</span></span><br></pre></td></tr></table></figure>
-<p>$$<br>\Gamma(z) = \int_0^\infty t^{z-1}e^{-t}dt,.<br>$$</p>
+        <div id="aplayer-rCVVnXGJ" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
+            <pre class="aplayer-lrc-content"></pre>
+        </div>
+        <script>
+          var ap = new APlayer({
+            element: document.getElementById("aplayer-rCVVnXGJ"),
+            narrow: false,
+            autoplay: false,
+            showlrc: false,
+            music: {
+              title: "Butter-Fly (MIX)",
+              author: "和田光司",
+              url: "http://link.hhtjim.com/163/29600327.mp3",
+              pic: "https://tvax3.sinaimg.cn/large/006TsOC4ly1g9g6dw1qe1j30sg0sgjtn.jpg",
+              lrc: ""
+            }
+          });
+          window.aplayers || (window.aplayers = []);
+          window.aplayers.push(ap);
+        </script>
 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.7.0/dist/APlayer.min.css">
+<script src="https://cdn.jsdelivr.net/npm/aplayer@1.7.0/dist/APlayer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/meting@1.1.0/dist/Meting.min.js"></script>
+<div class="aplayer" data-id="3099548864" data-server="netease" data-type="playlist" data-mode="random" data-autoplay="true"></div>
+
+<hr>
+<h2 id="Geam-Start！"><a href="#Geam-Start！" class="headerlink" title="Geam Start！"></a>Geam Start！</h2><hr>
+<h3 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h3><p>设计一个按优先数调度算法实现处理器调度的程序。<br>[提示]：<br>(1) 假定系统有五个进程，每一个进程用一个进程控制块PCB来代表，进程控制块的格式为：<br><img src="https://tvax3.sinaimg.cn/large/006TsOC4ly1g9oigzk1ioj304f032a9u.jpg" alt="操作系统"><br>其中，进程名——作为进程的标识，假设五个进程的进程名分别为P1，P2，P3，P4，P5。<br>指针——按优先数的大小把五个进程连成队列，用指针指出下一个进程的进程控制块的首地址，最后一个进程中的指针为“0”。<br>要求运行时间——假设进程需要运行的单位时间数。<br>优先数——赋予进程的优先数，调度时总是选取优先数大的进程先执行。<br>状态——可假设有两种状态，“就绪8080”状态和“结束”状态。五个进程的初始状态都为“就绪”，用“R”表示，当一个进程运行结束后，它的状态为“结束”，用“E”表示。<br>(2) 在每次运行你所设计的处理器调度程序之前，为每个进程任意确定它的“优先数”和“要求运行时间”。本实验由于为了检查的方便，优先数和运行时间采用下表中的数值。<br>(3) 为了调度方便，把五个进程按给定的优先数从大到小连成队列。用一单元指出队首进程，用指针指出队列的连接情况。例：<br><img src="https://tvax2.sinaimg.cn/large/006TsOC4ly1g9oihd66clj30fw05bq2w.jpg" alt="操作系统"></p>
+<hr>
+<h3 id="实现代码"><a href="#实现代码" class="headerlink" title="实现代码"></a>实现代码</h3><p>确实是太菜，只能想到最笨的方法，但是在我看来代码很好理解，一步步都能看懂。</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br><span class="line">178</span><br><span class="line">179</span><br><span class="line">180</span><br><span class="line">181</span><br><span class="line">182</span><br><span class="line">183</span><br><span class="line">184</span><br><span class="line">185</span><br><span class="line">186</span><br><span class="line">187</span><br><span class="line">188</span><br><span class="line">189</span><br><span class="line">190</span><br><span class="line">191</span><br><span class="line">192</span><br><span class="line">193</span><br><span class="line">194</span><br><span class="line">195</span><br><span class="line">196</span><br><span class="line">197</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">typedef</span> <span class="keyword">char</span> PROC_STATE;</span><br><span class="line"></span><br><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span> _<span class="title">proc</span></span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line">    <span class="keyword">char</span> name[<span class="number">32</span>];<span class="comment">//进程名</span></span><br><span class="line">    <span class="keyword">int</span> req_time;<span class="comment">//需要的运行时间，随机数产生</span></span><br><span class="line">    <span class="keyword">int</span> pri;<span class="comment">//优先级，随机数产生</span></span><br><span class="line">    PROC_STATE state;<span class="comment">//进程状态</span></span><br><span class="line">    <span class="class"><span class="keyword">struct</span> _<span class="title">proc</span> *<span class="title">next</span>;</span></span><br><span class="line">&#125; PROC;</span><br><span class="line"></span><br><span class="line"><span class="comment">//创建结构体，并为结构体中的属性赋值</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">PCB</span><span class="params">(PROC *P)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    PROC *p1,*p2,*p3;</span><br><span class="line">    p2 = P;</span><br><span class="line">    <span class="comment">//设置一个标志位，防止重复添加优先级相同的进程</span></span><br><span class="line">    <span class="keyword">int</span> flag[<span class="number">5</span>] = &#123;<span class="number">0</span>&#125;;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">1</span>; i &lt; <span class="number">6</span>; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        p1 = <span class="keyword">new</span> PROC;</span><br><span class="line"></span><br><span class="line">        <span class="comment">//进程的名字</span></span><br><span class="line">        <span class="built_in">stringstream</span> ss;</span><br><span class="line">        ss &lt;&lt; i;</span><br><span class="line">        <span class="built_in">string</span> temp = ss.str();</span><br><span class="line">        <span class="built_in">string</span> str = <span class="string">"P"</span> + temp;</span><br><span class="line">        <span class="comment">//cout &lt;&lt; str &lt;&lt; endl;</span></span><br><span class="line"></span><br><span class="line">        <span class="comment">//给进程命名，并得到进程名字的长度</span></span><br><span class="line">        <span class="keyword">int</span> len = str.copy(p1-&gt;name,<span class="number">31</span>);</span><br><span class="line">        <span class="comment">//在末尾加上结束符</span></span><br><span class="line">        p1-&gt;name[len] = <span class="string">'\0'</span>;</span><br><span class="line"></span><br><span class="line">        p1-&gt;req_time = rand() % <span class="number">8</span> + <span class="number">1</span>;</span><br><span class="line">        p1-&gt;pri = rand() % <span class="number">5</span> + <span class="number">1</span>;</span><br><span class="line">        p1-&gt;state = <span class="string">'R'</span>;</span><br><span class="line"></span><br><span class="line">        <span class="comment">//尾插</span></span><br><span class="line">        <span class="keyword">switch</span>(p1-&gt;pri)</span><br><span class="line">        &#123;</span><br><span class="line">        <span class="keyword">case</span> <span class="number">5</span>:</span><br><span class="line">            <span class="keyword">if</span>(flag[<span class="number">4</span>] == <span class="number">0</span>)<span class="comment">//判断是否出现相同优先级</span></span><br><span class="line">            &#123;</span><br><span class="line">                p1-&gt;next = P-&gt;next;</span><br><span class="line">                P-&gt;next = p1;</span><br><span class="line">                P = p1;</span><br><span class="line">                flag[<span class="number">4</span>] = <span class="number">1</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">else</span><span class="comment">//出现相同的优先级，并且已经插入过了，i减1重新生成</span></span><br><span class="line">            &#123;</span><br><span class="line">                i--;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        <span class="keyword">case</span> <span class="number">4</span>:</span><br><span class="line">            <span class="keyword">if</span>(flag[<span class="number">3</span>] == <span class="number">0</span>)</span><br><span class="line">            &#123;</span><br><span class="line">                p1-&gt;next = p2-&gt;next;</span><br><span class="line">                p2-&gt;next = p1;</span><br><span class="line">                p2 = p1;</span><br><span class="line">                flag[<span class="number">3</span>] = <span class="number">1</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">else</span></span><br><span class="line">            &#123;</span><br><span class="line">                i--;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        <span class="keyword">case</span> <span class="number">3</span>:</span><br><span class="line">            <span class="keyword">if</span>(flag[<span class="number">2</span>] == <span class="number">0</span>)</span><br><span class="line">            &#123;</span><br><span class="line">                p1-&gt;next = p2-&gt;next;</span><br><span class="line">                p2-&gt;next = p1;</span><br><span class="line">                p2 = p1;</span><br><span class="line">                flag[<span class="number">2</span>] = <span class="number">1</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">else</span></span><br><span class="line">            &#123;</span><br><span class="line">                i--;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        <span class="keyword">case</span> <span class="number">2</span>:</span><br><span class="line">            <span class="keyword">if</span>(flag[<span class="number">1</span>] == <span class="number">0</span>)</span><br><span class="line">            &#123;</span><br><span class="line">                p1-&gt;next = p2-&gt;next;</span><br><span class="line">                p2-&gt;next = p1;</span><br><span class="line">                p2 = p1;</span><br><span class="line">                flag[<span class="number">1</span>] = <span class="number">1</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">else</span></span><br><span class="line">            &#123;</span><br><span class="line">                i--;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        <span class="keyword">case</span> <span class="number">1</span>:</span><br><span class="line">            <span class="keyword">if</span>(flag[<span class="number">0</span>] == <span class="number">0</span>)</span><br><span class="line">            &#123;</span><br><span class="line">                p1-&gt;next = p2-&gt;next;</span><br><span class="line">                p2-&gt;next = p1;</span><br><span class="line">                p2 = p1;</span><br><span class="line">                flag[<span class="number">0</span>] = <span class="number">1</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">else</span></span><br><span class="line">            &#123;</span><br><span class="line">                i--;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">//将链按照P1，P2，P3，P4，P5的顺序排序连接</span></span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="number">4</span>; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        p2 = P;</span><br><span class="line">        p3 = P;</span><br><span class="line">        <span class="keyword">while</span>(p2-&gt;next != <span class="literal">NULL</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="comment">//p3是p2的前驱</span></span><br><span class="line">            p2=p2-&gt;next;</span><br><span class="line">            <span class="keyword">if</span>(p2-&gt;pri == (<span class="number">4</span> - i))</span><br><span class="line">            &#123;</span><br><span class="line">                p3-&gt;next = p2-&gt;next;</span><br><span class="line">                p2-&gt;next = P-&gt;next;</span><br><span class="line">                P-&gt;next = p2;</span><br><span class="line">                P = p2;</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            p3 = p3-&gt;next;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">myPrint</span><span class="params">(PROC *P)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="comment">//初始化头结点</span></span><br><span class="line">    P = <span class="keyword">new</span> PROC;</span><br><span class="line">    P-&gt;next = <span class="literal">NULL</span>;</span><br><span class="line">    PCB(P);</span><br><span class="line">    PROC *p1;</span><br><span class="line">    <span class="keyword">int</span> a = <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">1</span>; i &lt; <span class="number">7</span>; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">cout</span> &lt;&lt; <span class="string">"第"</span> &lt;&lt; i &lt;&lt; <span class="string">"次运行："</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">        <span class="built_in">cout</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">        <span class="comment">//每次都要重头遍历输出</span></span><br><span class="line">        p1 = P;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">while</span>(p1-&gt;next != <span class="literal">NULL</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            p1 = p1-&gt;next;</span><br><span class="line">            <span class="built_in">string</span> s = p1-&gt;name;</span><br><span class="line">            <span class="built_in">stringstream</span> ss;</span><br><span class="line">            ss &lt;&lt; a;</span><br><span class="line">            <span class="built_in">string</span> temp = ss.str();</span><br><span class="line">            <span class="built_in">string</span> name = <span class="string">"P"</span> + temp;</span><br><span class="line">            <span class="keyword">if</span>(s == name)<span class="comment">//按P1，P2，P3，P4，P5的顺序输出</span></span><br><span class="line">            &#123;</span><br><span class="line">                a++;</span><br><span class="line">                <span class="keyword">if</span>(p1-&gt;pri &gt; (<span class="number">6</span> - i))</span><br><span class="line">                &#123;</span><br><span class="line">                    p1-&gt;state = <span class="string">'E'</span>;</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="built_in">cout</span> &lt;&lt; <span class="string">"进程名："</span> &lt;&lt; p1-&gt;name &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">                <span class="built_in">cout</span> &lt;&lt; <span class="string">"指针："</span>;</span><br><span class="line">                <span class="keyword">if</span>(p1-&gt;next == <span class="literal">NULL</span>)</span><br><span class="line">                &#123;</span><br><span class="line">                    <span class="built_in">cout</span> &lt;&lt; <span class="string">"0"</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="keyword">else</span></span><br><span class="line">                &#123;</span><br><span class="line">                    <span class="built_in">cout</span> &lt;&lt; p1-&gt;next-&gt;name &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="built_in">cout</span> &lt;&lt; <span class="string">"要求运行时间："</span> &lt;&lt; p1-&gt;req_time &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">                <span class="built_in">cout</span> &lt;&lt; <span class="string">"优先数："</span> &lt;&lt; p1-&gt;pri &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">                <span class="built_in">cout</span> &lt;&lt; <span class="string">"状态："</span> &lt;&lt; p1-&gt;state &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">                <span class="built_in">cout</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">                <span class="keyword">if</span>(a == <span class="number">6</span>)<span class="comment">//直到输出P5跳出while循环</span></span><br><span class="line">                &#123;</span><br><span class="line">                    a = <span class="number">1</span>;</span><br><span class="line">                    <span class="keyword">break</span>;</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="keyword">else</span></span><br><span class="line">                &#123;</span><br><span class="line">                    p1 = P;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="built_in">cout</span> &lt;&lt; <span class="string">"************************"</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    PROC *P;</span><br><span class="line">    myPrint(P);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h3 id="运行结果"><a href="#运行结果" class="headerlink" title="运行结果"></a>运行结果</h3><p><img src="https://tva4.sinaimg.cn/large/006TsOC4ly1g9oiqxrop2j30fe0dmta0.jpg" alt="操作系统3"><br><img src="https://tvax2.sinaimg.cn/large/006TsOC4ly1g9oir6b82gj30fe0dmmyg.jpg" alt="操作系统4"><br><img src="https://tvax3.sinaimg.cn/large/006TsOC4ly1g9oirecb6ej30fe0dm0tz.jpg" alt="操作系统5"><br><img src="https://tva3.sinaimg.cn/large/006TsOC4ly1g9oirkqvxdj30fe0dm0tz.jpg" alt="操作系统6"><br><img src="https://tvax3.sinaimg.cn/large/006TsOC4ly1g9oirqz55rj30fe0dmwfq.jpg" alt="操作系统7"><br><img src="https://tvax1.sinaimg.cn/large/006TsOC4ly1g9oirxo5nmj30fe0dmgmt.jpg" alt="操作系统8"></p>
+<hr>
+<h2 id="Game-Clearance"><a href="#Game-Clearance" class="headerlink" title="Game Clearance!!!"></a>Game Clearance!!!</h2>
       
     </div>
     
@@ -513,7 +536,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="https://wangxingalong.club/post/undefined.html" title="我的第一个博客">https://wangxingalong.club/post/undefined.html</a>
+    <a href="https://wangxingalong.club/2019/12/07/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E2%80%94%E2%80%94%E8%BF%9B%E7%A8%8B%E8%B0%83%E5%BA%A6%E7%AE%97%E6%B3%95%E6%A8%A1%E6%8B%9F/" title="操作系统——进程调度算法模拟">https://wangxingalong.club/2019/12/07/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E2%80%94%E2%80%94%E8%BF%9B%E7%A8%8B%E8%B0%83%E5%BA%A6%E7%AE%97%E6%B3%95%E6%A8%A1%E6%8B%9F/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>
@@ -535,12 +558,6 @@
       
     </div>
     <footer class="post-footer">
-      
-        <div class="post-tags">
-          
-            <a href="/tags/%E8%BF%99%E6%98%AF%E4%B8%80%E4%B8%AA%E6%A0%87%E7%AD%BE/" rel="tag"><img src="https://tva2.sinaimg.cn/large/006TsOC4ly1g9f2kzpjb5j300g00g0dp.jpg"> 这是一个标签</a>
-          
-        </div>
       
 
       
@@ -564,14 +581,18 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2019/12/01/Markdown%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7%E4%B9%8B%E6%8F%92%E5%85%A5%E9%9F%B3%E9%A2%91/" rel="next" title="Markdown使用技巧之插入音频">
+                <i class="fa fa-chevron-left"></i> Markdown使用技巧之插入音频
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/post/undefined.html" rel="prev" title="MarkDown学习笔记">
-                MarkDown学习笔记 <i class="fa fa-chevron-right"></i>
+              <a href="/2019/12/07/C++%E4%B8%ADint%E8%BD%ACstring%E3%80%81char%E5%92%8Cint%E4%BA%92%E8%BD%AC/" rel="prev" title="C++中int转string、char和int互转">
+                C++中int转string、char和int互转 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -694,7 +715,7 @@
               
                 <a href="/archives/%7C%7C%20archive">
               
-                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-count">6</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -783,7 +804,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#我的第一个博客"><span class="nav-number">1.</span> <span class="nav-text">我的第一个博客</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#测试code"><span class="nav-number">1.0.1.</span> <span class="nav-text">测试code</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#测试公式"><span class="nav-number">1.0.2.</span> <span class="nav-text">测试公式</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Geam-Start！"><span class="nav-number">1.</span> <span class="nav-text">Geam Start！</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#问题描述"><span class="nav-number">1.1.</span> <span class="nav-text">问题描述</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#实现代码"><span class="nav-number">1.2.</span> <span class="nav-text">实现代码</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#运行结果"><span class="nav-number">1.3.</span> <span class="nav-text">运行结果</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Game-Clearance"><span class="nav-number">2.</span> <span class="nav-text">Game Clearance!!!</span></a></li></ol></div>
             
 
           </div>
