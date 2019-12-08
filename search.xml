@@ -6,12 +6,12 @@
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><hr>
 <p>测试用，可以随便听听。<br><audio src="http://link.hhtjim.com/163/464863017.mp3" style="width: 100%; max-height :100%; max-width: 100%; display: block; margin-left: auto; margin-right: auto;" controls="controls" loop="loop" preload="meta">你的浏览器不支持这个标签。</audio></p>
 
-        <div id="aplayer-BxUtpHpa" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
+        <div id="aplayer-duGZKRWb" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
             <pre class="aplayer-lrc-content"></pre>
         </div>
         <script>
           var ap = new APlayer({
-            element: document.getElementById("aplayer-BxUtpHpa"),
+            element: document.getElementById("aplayer-duGZKRWb"),
             narrow: false,
             autoplay: false,
             showlrc: false,
@@ -47,6 +47,13 @@
 <p>运行结果：<br><img src="https://tva3.sinaimg.cn/large/006TsOC4ly1g9ojku9k3vj30ip0efq31.jpg" alt="C++3"></p>
 <hr>
 <h2 id="Game-Clearance"><a href="#Game-Clearance" class="headerlink" title="Game Clearance!!!"></a>Game Clearance!!!</h2>]]></content>
+      <categories>
+        <category>编程语言</category>
+      </categories>
+      <tags>
+        <tag>C++</tag>
+        <tag>类型转换</tag>
+      </tags>
   </entry>
   <entry>
     <title>操作系统——进程调度算法模拟</title>
@@ -54,12 +61,12 @@
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><hr>
 <p>测试用，可以随便听听。<br><audio src="http://link.hhtjim.com/163/464863017.mp3" style="width: 100%; max-height :100%; max-width: 100%; display: block; margin-left: auto; margin-right: auto;" controls="controls" loop="loop" preload="meta">你的浏览器不支持这个标签。</audio></p>
 
-        <div id="aplayer-rCVVnXGJ" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
+        <div id="aplayer-LqmQbvxI" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
             <pre class="aplayer-lrc-content"></pre>
         </div>
         <script>
           var ap = new APlayer({
-            element: document.getElementById("aplayer-rCVVnXGJ"),
+            element: document.getElementById("aplayer-LqmQbvxI"),
             narrow: false,
             autoplay: false,
             showlrc: false,
@@ -91,6 +98,13 @@
 <h3 id="运行结果"><a href="#运行结果" class="headerlink" title="运行结果"></a>运行结果</h3><p><img src="https://tva4.sinaimg.cn/large/006TsOC4ly1g9oiqxrop2j30fe0dmta0.jpg" alt="操作系统3"><br><img src="https://tvax2.sinaimg.cn/large/006TsOC4ly1g9oir6b82gj30fe0dmmyg.jpg" alt="操作系统4"><br><img src="https://tvax3.sinaimg.cn/large/006TsOC4ly1g9oirecb6ej30fe0dm0tz.jpg" alt="操作系统5"><br><img src="https://tva3.sinaimg.cn/large/006TsOC4ly1g9oirkqvxdj30fe0dm0tz.jpg" alt="操作系统6"><br><img src="https://tvax3.sinaimg.cn/large/006TsOC4ly1g9oirqz55rj30fe0dmwfq.jpg" alt="操作系统7"><br><img src="https://tvax1.sinaimg.cn/large/006TsOC4ly1g9oirxo5nmj30fe0dmgmt.jpg" alt="操作系统8"></p>
 <hr>
 <h2 id="Game-Clearance"><a href="#Game-Clearance" class="headerlink" title="Game Clearance!!!"></a>Game Clearance!!!</h2>]]></content>
+      <categories>
+        <category>计算机操作系统</category>
+      </categories>
+      <tags>
+        <tag>操作系统</tag>
+        <tag>进程调度</tag>
+      </tags>
   </entry>
   <entry>
     <title>Markdown使用技巧之插入音频</title>
@@ -98,12 +112,12 @@
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><hr>
 <p>测试用，可以随便听听。<br><audio src="http://link.hhtjim.com/163/464863017.mp3" style="width: 100%; max-height :100%; max-width: 100%; display: block; margin-left: auto; margin-right: auto;" controls="controls" loop="loop" preload="meta">你的浏览器不支持这个标签。</audio></p>
 
-        <div id="aplayer-blgnoBJE" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
+        <div id="aplayer-XYDolvPA" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
             <pre class="aplayer-lrc-content"></pre>
         </div>
         <script>
           var ap = new APlayer({
-            element: document.getElementById("aplayer-blgnoBJE"),
+            element: document.getElementById("aplayer-XYDolvPA"),
             narrow: false,
             autoplay: false,
             showlrc: false,
@@ -197,12 +211,12 @@
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><hr>
 <p>测试用，可以随便听听。<br><audio src="http://link.hhtjim.com/163/464863017.mp3" style="width: 100%; max-height :100%; max-width: 100%; display: block; margin-left: auto; margin-right: auto;" controls="controls" loop="loop" preload="meta">你的浏览器不支持这个标签。</audio></p>
 
-        <div id="aplayer-ZQMBmBDZ" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
+        <div id="aplayer-CNZGcQcA" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
             <pre class="aplayer-lrc-content"></pre>
         </div>
         <script>
           var ap = new APlayer({
-            element: document.getElementById("aplayer-ZQMBmBDZ"),
+            element: document.getElementById("aplayer-CNZGcQcA"),
             narrow: false,
             autoplay: false,
             showlrc: false,
@@ -225,13 +239,13 @@
 
 <hr>
 <h2 id="Game-Start"><a href="#Game-Start" class="headerlink" title="Game Start!"></a>Game Start!</h2><hr>
-<h2 id="工具推荐"><a href="#工具推荐" class="headerlink" title="工具推荐"></a>工具推荐</h2><p><a href="https://chrome.google.com/webstore/detail/%E5%BE%AE%E5%8D%9A%E5%9B%BE%E5%BA%8A/pinjkilghdfhnkibhcangnpmcpdpmehk?hl=zh-CN" target="_blank" rel="noopener">微博图床</a><br>网上说这个不能长期使用，要看新浪的心情。不过就目前情况来说，没有服务器的情况下，这个Chrome插件还是不错的。</p>
+<h2 id="工具推荐"><a href="#工具推荐" class="headerlink" title="工具推荐"></a>工具推荐</h2><p><strong>微博图床</strong>：<a href="https://chrome.google.com/webstore/detail/%E5%BE%AE%E5%8D%9A%E5%9B%BE%E5%BA%8A/pinjkilghdfhnkibhcangnpmcpdpmehk?hl=zh-CN" target="_blank" rel="noopener">https://chrome.google.com/webstore/detail/%E5%BE%AE%E5%8D%9A%E5%9B%BE%E5%BA%8A/pinjkilghdfhnkibhcangnpmcpdpmehk?hl=zh-CN</a><br>网上说这个不能长期使用，要看新浪的心情。不过就目前情况来说，没有服务器的情况下，这个Chrome插件还是不错的。</p>
 <hr>
 <h2 id="安装并启用插件。"><a href="#安装并启用插件。" class="headerlink" title="安装并启用插件。"></a>安装并启用插件。</h2><hr>
 <p>如果已经安装了插件，Chrome浏览器的导航栏会出现如图所示的标志：<br><img src="https://tvax4.sinaimg.cn/large/006TsOC4ly1g9h8lfvp9dj303i012dfm.jpg" alt="image_skill1"></p>
 <hr>
 <h2 id="上传并获得图片链接"><a href="#上传并获得图片链接" class="headerlink" title="上传并获得图片链接"></a>上传并获得图片链接</h2><hr>
-<p>启用插件之后，点击插件，按步骤上传图片即可：<br><img src="https://tva2.sinaimg.cn/large/006TsOC4ly1g9h8oh8b2jj30nw0goq4g.jpg" alt="image_skill2"><br>复制Markdown之后直接粘贴到文章中即可。</p>
+<p>启用插件之后，点击插件，按步骤上传图片即可：<br><img src="https://tvax1.sinaimg.cn/large/006TsOC4ly1g9pdq8wpg5j30nf0gcn0p.jpg" alt="image_skill2"><br>复制Markdown之后直接粘贴到文章中即可。<br><strong>有的时候可能会上传失败，这时可以打开微博，登录上你的微博账号就能上传了。</strong></p>
 <hr>
 <h2 id="Game-Clearance"><a href="#Game-Clearance" class="headerlink" title="Game Clearance!!!"></a>Game Clearance!!!</h2>]]></content>
       <categories>
@@ -247,12 +261,12 @@
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><hr>
 <p>测试用，可以随便听听。<br><audio src="http://link.hhtjim.com/163/464863017.mp3" style="width: 100%; max-height :100%; max-width: 100%; display: block; margin-left: auto; margin-right: auto;" controls="controls" loop="loop" preload="meta">你的浏览器不支持这个标签。</audio></p>
 
-        <div id="aplayer-SoshUdNa" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
+        <div id="aplayer-sVyMzGEy" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
             <pre class="aplayer-lrc-content"></pre>
         </div>
         <script>
           var ap = new APlayer({
-            element: document.getElementById("aplayer-SoshUdNa"),
+            element: document.getElementById("aplayer-sVyMzGEy"),
             narrow: false,
             autoplay: false,
             showlrc: false,
@@ -574,11 +588,5 @@
 <figure class="highlight tex"><table><tr><td class="code"><pre><span class="line"><span class="formula">$$</span></span><br><span class="line"><span class="formula"><span class="tag">\<span class="name">Gamma</span></span>(z) = <span class="tag">\<span class="name">int</span></span>_0^<span class="tag">\<span class="name">infty</span></span> t^&#123;z-1&#125;e^&#123;-t&#125;dt<span class="tag">\<span class="name">,</span></span>.</span></span><br><span class="line"><span class="formula">$$</span></span><br></pre></td></tr></table></figure>
 <p>$$<br>\Gamma(z) = \int_0^\infty t^{z-1}e^{-t}dt,.<br>$$</p>
 ]]></content>
-      <categories>
-        <category>这是一个分类</category>
-      </categories>
-      <tags>
-        <tag>这是一个标签</tag>
-      </tags>
   </entry>
 </search>
